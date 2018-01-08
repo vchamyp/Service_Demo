@@ -14,7 +14,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-
     }
 
 
@@ -24,14 +23,6 @@ public class MainActivity extends AppCompatActivity {
         in.putExtra("sleept",1);
         startService(in);
     }
-
-    public void StartedService2(View view) {
-
-        Intent in = new Intent(MainActivity.this,Start_Service.class);
-        in.putExtra("sleept",1);
-        startService(in);
-    }
-
 
 
     public void StopService(View view) {
